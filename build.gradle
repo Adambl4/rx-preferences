@@ -1,38 +1,38 @@
 buildscript {
-  repositories {
-    mavenCentral()
-    jcenter()
-  }
-  dependencies {
-    classpath 'com.android.tools.build:gradle:2.2.0'
-  }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+    }
 }
 
 allprojects {
-  repositories {
-    mavenCentral()
-    jcenter()
-  }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
 
-  group = GROUP
-  version = VERSION_NAME
+    group = GROUP
+    version = VERSION_NAME
 }
 
 ext {
-  minSdkVersion = 9
-  targetSdkVersion = 24
-  compileSdkVersion = 24
-  buildToolsVersion = '23.0.3'
-  javaVersion = JavaVersion.VERSION_1_7
+    minSdkVersion = 9
+    targetSdkVersion = 24
+    compileSdkVersion = 24
+    buildToolsVersion = '23.0.3'
+    javaVersion = JavaVersion.VERSION_1_7
 }
 
 ext.deps = [
-    annotations: 'com.android.support:support-annotations:23.1.1',
-    rxjava: 'io.reactivex:rxjava:1.2.1',
-    rxandroid: 'io.reactivex:rxandroid:1.2.1',
-    rxbinding: 'com.jakewharton.rxbinding:rxbinding:0.3.0',
-    butterknife: 'com.jakewharton:butterknife:7.0.1',
-    junit: 'junit:junit:4.12',
-    assertj: 'org.assertj:assertj-core:1.7.0',
-    robolectric: 'org.robolectric:robolectric:3.0',
+        annotations: 'com.android.support:support-annotations:23.1.1',
+        rxjava     : 'io.reactivex:rxjava:1.2.1',
+        rxandroid  : 'io.reactivex:rxandroid:1.2.1',
+        rxbinding  : 'com.jakewharton.rxbinding:rxbinding:0.3.0',
+        butterknife: 'com.jakewharton:butterknife:7.0.1',
+        junit      : 'junit:junit:4.12',
+        assertj    : 'org.assertj:assertj-core:1.7.0',
+        robolectric: 'org.robolectric:robolectric:3.0',
 ]
