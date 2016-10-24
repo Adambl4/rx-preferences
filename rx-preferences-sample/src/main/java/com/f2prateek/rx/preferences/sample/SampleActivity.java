@@ -33,7 +33,7 @@ public class SampleActivity extends Activity {
 
         // Preferences
         SharedPreferences preferences = getDefaultSharedPreferences(this);
-        RxSharedPreferences rxPreferences = RxSharedPreferences.create(preferences);
+        RxSharedPreferences rxPreferences = RxSharedPreferences.Companion.create(preferences);
 
         // foo
         fooPreference = rxPreferences.getBoolean("foo");
