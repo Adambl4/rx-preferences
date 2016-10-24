@@ -1,10 +1,17 @@
 buildscript {
+    ext {
+        kotlinVersion = '1.1-M02'
+    }
     repositories {
         mavenCentral()
         jcenter()
+        maven {
+            url  "http://dl.bintray.com/kotlin/kotlin-eap-1.1"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$project.kotlinVersion"
     }
 }
 
@@ -12,6 +19,9 @@ allprojects {
     repositories {
         mavenCentral()
         jcenter()
+        maven {
+            url  "http://dl.bintray.com/kotlin/kotlin-eap-1.1"
+        }
     }
 
     group = GROUP
